@@ -2,23 +2,61 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
+    padding: 0 20px;
 }
 
-.portfolio__item {
-    width: 320px;
-    height: 280px;
+@media (min-width: 960px) {
+    .portfolio {
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+}
+
+.portfolio > * {
+    width: 100%;
+    height: 220px;
     overflow: hidden;
     position: relative;
+}
+
+@media (min-width: 420px) {
+    .portfolio > * {
+        width: 420px;
+        height: 280px;
+    }
+}
+
+
+@media (min-width: 764px) {
+    .portfolio > * {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1140px) {
+    .portfolio > * {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .portfolio > * {
+        width: 320px;
+    }
+
 }
 
 .portfolio__item > * {
     position: absolute;
 }
 
+
 .portfolio__filter {
-    width: 320px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(55, 55, 55, 0) 53.65%, rgba(55, 55, 55, 0.8) 100%);
@@ -31,10 +69,16 @@
     width: 210px;
 
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 1.2;
     color: #FFFFFF;
     pointer-events: none;
+}
+
+@media (min-width: 420px) {
+    .portfolio__title {
+        font-size: 24px;
+    }
 }
 
 .portfolio__square {
@@ -49,29 +93,42 @@
     pointer-events: none;
 }
 
+.portfolio__img {
+    width: 100%;
+    height: 100%;
+}
+
 .portfolio__img img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     transition: transform .5s;
 }
 
 .portfolio__img:hover img {
-    transform: scale(1.15);
+    transform: scale(1.1) translateY(-50%);
+    cursor: pointer;
 }
 
 .portfolio__view-all {
+
+    height: 60px;
 
     align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
     text-decoration: none;
-    width: 300px;
-    height: 60px;
+
     border: 1px solid rgba(0, 0, 0, 0.1);;
 
 }

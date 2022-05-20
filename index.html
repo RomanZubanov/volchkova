@@ -17,6 +17,7 @@
         <li class="menu__item">Услуги и цены</li>
         <li class="menu__item">Контакты</li>
     </menu>
+    <button class="hamburger header__menu-button"><span class="hamburger__line"></span><span>Меню</span></button>
 </header>
 <h1 class="layout__title-1  title-1"><span class="title-1__main-title">Дизайн-студия интерьеров</span><span class="title-1__sub-title">в Москве</span></h1>
 <section class="layout__portfolio portfolio">
@@ -68,7 +69,7 @@
         <div class="portfolio__title">Северная<br>слобода</div>
         <div class="portfolio__square">200 м<sup>2</sup></div>
     </div>
-    <a class="portfolio__view-all" href="#"><span>Все дизайн-проекты<span></a>
+    <a class="portfolio__view-all" href="#"><span>Все дизайн-проекты</span></a>
 </section>
 <footer class="layout__footer footer">
     <div class="footer__politica">Политика конфиденциальности</div>
@@ -76,6 +77,18 @@
     <div class="footer__mail">info@a-volchkova.ru</div>
     <div class="footer__icons"><img src="img/house.png" alt="иконка"><img src="img/pw.png" alt="иконка"></div>
 </footer>
+
+<script>
+    const menuButton = document.querySelector('.header__menu-button');
+    const menu = document.querySelector('.menu');
+    const layout = document.querySelector('.layout');
+
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('menu--open');
+        menuButton.classList.toggle('hamburger--cross');
+        layout.classList.toggle('layout--fixed');
+    });
+</script>
 
 </body>
 </html>

@@ -1,0 +1,54 @@
+.hamburger {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: unset;
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+
+}
+
+.hamburger__line {
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: black;
+    transition: transform .2s;
+}
+
+.hamburger:before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: black;
+    transform: translateY(10px);
+    transition: transform .2s;
+}
+.hamburger:after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: black;
+    transform: translateY(-10px);
+    transition: transform .2s;
+}
+
+.hamburger, .hamburger span {
+    font-size: 0;
+    line-height: 0;
+}
+
+.hamburger--cross .hamburger__line {
+    transform: scaleX(0);
+}
+
+.hamburger--cross:before {
+    transform: translateY(2px) rotate(45deg);
+}
+
+.hamburger--cross:after {
+    transform: translateY(-2px) rotate(-45deg);
+}

@@ -2,16 +2,25 @@
     padding-top: 40px;
 }
 
-.layout > * {
-    margin: auto;
+@media (min-width: 960px) {
+    .layout > * {
+        margin: auto;
+    }
+}
+
+
+.layout__header {
+    margin: 0 20px 40px 20px;
+}
+
+@media (min-width: 960px) {
+    .layout__header {
+        margin: 0 auto 63px auto;
+    }
 }
 
 .layout__title-1 {
-    margin-top: 63px;
-}
-
-.layout__title-1 {
-    margin-bottom: 60px;
+    margin: 0 20px 60px 20px;
 }
 
 .layout__portfolio {
@@ -23,4 +32,8 @@
     max-width: 1400px;
     height: 100px;
     border-top: 1px solid #e6e6e6;
+}
+
+.layout--fixed {
+    position: fixed;
 }

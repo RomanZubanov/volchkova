@@ -1,0 +1,36 @@
+.title-1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.title-1__main-title {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 28px;
+}
+
+.title-1__sub-title {
+    position: relative;
+    bottom: 27px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+
+    z-index: 2;
+    background-color: #fff;
+    padding: 0 15px;
+    margin: auto;
+    margin-top: 10px;
+}
+

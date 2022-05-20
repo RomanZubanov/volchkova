@@ -1,0 +1,12 @@
+.layout {
+    padding-top: 40px;
+}
+
+.layout > * {
+    margin: auto;
+}
+
+.layout__title-1 {
+    margin-top: 63px;
+}
+

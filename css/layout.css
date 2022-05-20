@@ -53,6 +53,12 @@
     }
 }
 
+@media (min-width: 1400px) {
+    .layout__portfolio {
+        margin: 0 auto 100px auto;
+    }
+}
+
 .layout__footer {
     max-width: 1400px;
     min-height: 100px;

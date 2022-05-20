@@ -1,15 +1,37 @@
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 20px;
+    row-gap: 10px;
 }
 
-.footer__politica {
+@media (min-width: 740px) {
+    .footer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1400px) {
+    .footer {
+        padding: 0;
+    }
+}
+
+.footer__politic {
+    order: 2;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
     opacity: 0.5;
+}
+
+@media (min-width: 740px) {
+    .footer__politic {
+        order: 0;
+    }
 }
 
 .footer__phone {

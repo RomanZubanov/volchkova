@@ -5,11 +5,23 @@
     align-items: center;
 
     font-weight: 500;
-    font-size: 42px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
 
     color: #000000;
+}
+
+@media (min-width: 380px) {
+    .title-1 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 680px) {
+    .title-1 {
+        font-size: 42px;
+    }
 }
 
 @media (min-width: 960px) {
@@ -29,7 +41,7 @@
     bottom: 27px;
 
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     text-align: center;
     color: #000000;
@@ -41,3 +53,8 @@
     margin-top: 10px;
 }
 
+@media (min-width: 380px) {
+    .title-1__sub-title {
+        font-size: 24px;
+    }
+}

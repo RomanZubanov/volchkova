@@ -13,6 +13,23 @@
     }
 }
 
+.header__logo img {
+    width: 100px;
+}
+
+@media (min-width: 380px) {
+    .header__logo img {
+        width: 130px;
+    }
+}
+
+@media (min-width: 680px) {
+    .header__logo img {
+        width: unset;
+    }
+}
+
+
 @media (min-width: 960px) {
     .header__logo {
         position: absolute;
@@ -29,7 +46,13 @@
 
 .header__menu-button {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 380px) {
+    .header__logo img {
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 560px) {

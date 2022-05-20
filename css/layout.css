@@ -10,3 +10,16 @@
     margin-top: 63px;
 }
 
+.layout__title-1 {
+    margin-bottom: 60px;
+}
+
+.layout__portfolio {
+    max-width: 1400px;
+    margin-bottom: 120px;
+}
+
+.layout__footer {
+    max-width: 1400px;
+    border-top: 1px solid #e6e6e6;
+}
